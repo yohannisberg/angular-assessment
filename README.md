@@ -1,49 +1,93 @@
 # Angular assessment
+  This assessment is intended to assess your skills and knowledge of Angular concepts.
 
+  We will be creating the front end for e-commerce clothing site.
+
+  There are 3 sections to this assessment.
+
+  This assessment already includes a few files and folders that you will utilize.
+
+  Let's get started!
+
+``Section 1``
 
 ``1``
- Create a basic angular app that includes a mainCtrl,mainService,app.js and routes.js The index.html file is included in this repo so you dont need to add one.
+  Create a basic angular app that includes:
+    - shopCtrl
+    - shopService
+    - app.js
+  The index.html file is provided for you so you do not need to create it.  
 
 ``2``
- Setup your router, states, and ui-view so that the home.html loads first. Also set up the routes for the about.html, blog.html and shop.html.
+  Setup your routes and states in your app.js file.
+  Setup the routes for the home.html, about.html, blog.html and shop.html.
+  Setup the ui-view and ensure that the home.html loads first.
 
 ``3``
- Connect the navigation links that are located in the index.html to point to the corresponding page.
+  Connect the navigation links that are located in the index.html to point to their corresponding pages.
+  Ensure that the Shop clothing button routes to the shop state as well.
+
+``Section 2``
+
+``1``
+  Every good company needs a logo. Your job is to create a logo using a Directive.
+
+``2``
+  Name the directive 'logo' and restrict it to an element.
+
+``3``
+  Create a templateUrl for your directive called 'logo.html' in your views.
+  Use the image found in the img folder for the logo.
 
 ``4``
- After you have your routing setup you can start working on getting the data you'll need.
- For the shop.html view you're going to need to make an api call to http://practiceapi.devmounta.in/products to get all the products.
- 
- ``5``
- Product needs to be a directive.  The template is provided for you in product-tmpl.html.
- It needs to have an isolate scope and take in the product and show the details.
- Clicking on the title will navigate to product details.
- Clicking on the image will collapse the image and show a link that says "show image" instead.  Click on "show image" will hide the "show image" link and show the actual image.
- All the styles are completed for you already so you'll just need to display the data in the right spot. LOOK FOR COMMENTS.
- 
- ``6``
- Replace the product skeleton located in shop.html with your product directive and use that to show all the products.  
- 
- ``7`` 
- After your data is displaying correctly you'll need to get the product-details view configured.
- In your routes file add a route called details. This route is going to have an id being passed in. The url will look like this detail/:id.
- Now that the route is setup you can finish the links in the shop.html file.
+  Place your logo directive in the index.html file right above the opening nav tag.
 
- The link that points to the product detail will need to pass along the id of the item being clicked using an ui-sref.
+``5``
+  Give your directive element a class and use position absolute and additional css to place the logo in the upper right corner and resize the image to make it look good.
+  Write your css in the app.css file in the styles folder.
+
+``Section 3``
+
+``1``
+  For this section we will be getting all of the products and displaying them on the shopping page using a functional Directive.
+
+``2``
+  For the shop.html view you're going to need to make an api call to http://practiceapi.devmounta.in/products to get all the products. Use your shopService to make this request.
+
+``3``
+  Ensure that the data that comes back from the request is saved in an array on $scope in your shopCtrl. You will be looping over this data and inputing it into your product directive.
+
+``4``
+  Now that we have our data, lets create our product directive. The template is provided for you in product-tmpl.html.
+  The Directive needs to:
+    - Have an isolate scope and take in the product and show the details.
+    - Be clickable on the title and navigate to the product details.
+    - Be clickable on the image and collapse the image and show a link that says "show image" instead.  
+    - Be clickable on "show image" and hide the "show image" link and show the actual image.
+  All the styles are completed for you already so you'll just need to display the data in the right spot. LOOK FOR COMMENTS.
+
+``5``  
+  Once you have created your directive you will need to loop over it on the shop.html view. LOOK FOR COMMENTS.  
+
+``7``
+  After your data is displaying correctly you'll need to get the product-details view configured.
+  In your routes file add a route called details. This route is going to have an id being passed in. The url will look like this details/:id.
+  Now that the route is setup you can finish the links in the shop.html file.
+  The link that points to the product detail will need to pass along the id of the item being clicked using an ui-sref.
 
 ``8``
-Product-details.html will be the hardest view to get working. You'll need to check the state params for the id being passed along in the route.
-After you have that id you'll need to make an api call to http://practiceapi.devmounta.in/products/ + the id being passed in the route.
-This will return the specific item based off the id you passed.
-Put that item on $scope and display in the view.
+  Product-details.html will be the hardest view to get working. You'll need to check the state params for the id being passed along in the route.
+  After you have that id you'll need to make an api call to http://practiceapi.devmounta.in/products/ + the id being passed in the route.
+  This will return the specific product based off the id you passed.
+  Put that product on $scope and display in the view.
 
 ``9``
-Host your solution on github pages.
-* Open the termal to where this assessment is
-* Add and commit all of your completed code.
-* Type git checkout -b gh-pages
-* Type git push -u origin gh-pages
-* Find your account name on github and insert it into this url http://YourGithubAccountName.github.io/angular-assessment
-Open that url to make sure it works, then send that url to your assigned mentor!
+  Host your solution on github pages.
+    - Open the terminal to where this assessment is
+    - Add and commit all of your completed code.
+    - Type git checkout -b gh-pages
+    - Type git push -u origin gh-pages
+    - Find your account name on github and insert it into this url http://YourGithubAccountName.github.io/angular-assessment
+    - Open that url to make sure it works, then send that url to your assigned mentor!
 
 # Congratulations! you have finished the assessment

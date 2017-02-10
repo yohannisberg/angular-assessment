@@ -52,7 +52,7 @@
       - Be clickable on "show image" and hide the "show image" link and show the actual image.
       - All the styles are completed for you already so you'll just need to display the data in the right spot. #####LOOK FOR COMMENTS.
 
-  5. Once you have created your directive you will need to loop over it on the shop.html view. #####LOOK FOR COMMENTS.  
+  5. Once you have created your directive you will need to loop over it on the shop.html view. <strong>LOOK FOR COMMENTS. </strong> 
 
   7. After your data is displaying correctly you'll need to get the product-details view configured. In your routes file add a route called details. This route is going to have an id passed in. The url will look like this:  ```js details/:id ```. Now that the route is setup you can finish the links in the shop.html file. The link that points to the product detail will need to pass along the id of the item being clicked using an ui-sref.
 

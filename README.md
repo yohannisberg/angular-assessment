@@ -16,12 +16,12 @@
       - shopService
       - app.js
 
-  2.
+  2. Setup your routes
       - Setup your routes and states in your app.js file.
       - Setup the routes for the home.html, about.html, blog.html and shop.html.
       - Setup the ui-view and ensure that the home.html loads first.
 
-  3.
+  3. Connect Navigation
       - Connect the navigation links that are located in the index.html to point to their corresponding pages.
       - Ensure that the Shop clothing button routes to the shop state as well.
 

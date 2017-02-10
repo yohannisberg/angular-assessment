@@ -1,7 +1,7 @@
 # Angular assessment
   This assessment is intended to assess your skills and knowledge of Angular concepts.
 
-  We will be creating the front end for e-commerce clothing site.
+  We will be creating the front end for an e-commerce clothing site.
 
   There are 3 sections to this assessment.
 

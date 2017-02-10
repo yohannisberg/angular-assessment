@@ -12,10 +12,10 @@
 ``Section 1``
 
 ``1``
-  Create a basic angular app that includes:
-    - shopCtrl
-    - shopService
-    - app.js
+  Create a basic angular app that includes: <br>
+    - shopCtrl <br>
+    - shopService <br>
+    - app.js <br>
   The index.html file is provided for you so you do not need to create it.  
 
 ``2``
@@ -62,7 +62,7 @@
   The Directive needs to:
     - Have an isolate scope and take in the product and show the details.
     - Be clickable on the title and navigate to the product details.
-    - Be clickable on the image and collapse the image and show a link that says "show image" instead.  
+    - Be clickable on the image and collapse the image and show a link that says "show image" instead.   
     - Be clickable on "show image" and hide the "show image" link and show the actual image.
   All the styles are completed for you already so you'll just need to display the data in the right spot. LOOK FOR COMMENTS.
 
@@ -83,11 +83,11 @@
 
 ``9``
   Host your solution on github pages.
-    - Open the terminal to where this assessment is
+    - Open the terminal to where this assessment is.
     - Add and commit all of your completed code.
-    - Type git checkout -b gh-pages
-    - Type git push -u origin gh-pages
+    - Type git checkout -b gh-pages.
+    - Type git push -u origin gh-pages.
     - Find your account name on github and insert it into this url http://YourGithubAccountName.github.io/angular-assessment
     - Open that url to make sure it works, then send that url to your assigned mentor!
 
-# Congratulations! you have finished the assessment
+# Congratulations! You have finished the assessment.

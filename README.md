@@ -50,7 +50,7 @@
       - Be clickable on the title and navigate to the product details.
       - Be clickable on the image and collapse the image and show a link that says "show image" instead.   
       - Be clickable on "show image" and hide the "show image" link and show the actual image.
-      - All the styles are completed for you already so you'll just need to display the data in the right spot. #####LOOK FOR COMMENTS.
+      - All the styles are completed for you already so you'll just need to display the data in the right spot. <strong>LOOK FOR COMMENTS.</strong>
 
   5. Once you have created your directive you will need to loop over it on the shop.html view. <strong>LOOK FOR COMMENTS. </strong> 
 

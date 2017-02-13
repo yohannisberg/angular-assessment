@@ -43,18 +43,18 @@
 
   2. For the shop.html view you're going to need to make an api call to http://practiceapi.devmounta.in/products to get all the products. Use your shopService to make this request.
 
-  3. Ensure that the data that comes back from the request is saved in an array on $scope in your shopCtrl. You will be looping over this data and inputing it into your product directive.
+  3. Ensure that the data that comes back from the request is saved in an array on $scope in your shopCtrl. You will be looping over this data and inputting it into your product directive.
 
   4. Now that we have our data, lets create our product directive. The template is provided for you in product-tmpl.html. The Directive needs to:
       - Have an isolate scope and take in the product and show the details.
       - Be clickable on the title and navigate to the product details.
       - Be clickable on the image and collapse the image and show a link that says "show image" instead.   
       - Be clickable on "show image" and hide the "show image" link and show the actual image.
-      - All the styles are completed for you already so you'll just need to display the data in the right spot. LOOK FOR COMMENTS.
+      - All the styles are completed for you already so you'll just need to display the data in the right spot. <strong>LOOK FOR COMMENTS.</strong>
 
-  5. Once you have created your directive you will need to loop over it on the shop.html view. LOOK FOR COMMENTS.  
+  5. Once you have created your directive you will need to loop over it on the shop.html view. <strong>LOOK FOR COMMENTS. </strong> 
 
-  7. After your data is displaying correctly you'll need to get the product-details view configured. In your routes file add a route called details. This route is going to have an id being passed in. The url will look like this details/:id. Now that the route is setup you can finish the links in the shop.html file. The link that points to the product detail will need to pass along the id of the item being clicked using an ui-sref.
+  7. After your data is displaying correctly you'll need to get the product-details view configured. In your routes file add a route called details. This route is going to have an id passed in. The url will look like this:  ``` details/:id ```. Now that the route is setup you can finish the links in the shop.html file. The link that points to the product detail will need to pass along the id of the item being clicked using an ui-sref.
 
   8. Product-details.html will be the hardest view to get working. You'll need to check the state params for the id being passed along in the route. After you have that id you'll need to make an api call to http://practiceapi.devmounta.in/products/ + the id being passed in the route. This will return the specific product based off the id you passed. Put that product on $scope and display in the view.
 

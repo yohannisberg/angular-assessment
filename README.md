@@ -9,9 +9,9 @@
 
   Let's get started!
 
-## Section 1
+## Part 1
 
-### Section 1a - Skeleton
+### Part 1a - Skeleton
 
   1. Create a basic angular app that includes:
       - shopCtrl
@@ -29,7 +29,7 @@
       - Ensure that the Shop clothing button routes to the shop state as well.
 
 
-### Section 1b - Bring in data
+### Part 1b - Bring in data
 
   1. For this section we will be getting all of the products and displaying them on the shopping page.
 
@@ -48,7 +48,7 @@
       - All the styles are completed for you already so you'll just need to display the data in the right spot. <strong>LOOK FOR COMMENTS.</strong>
 
   
-### Section 1c - Basic logo directive
+### Part 1c - Basic logo directive
 
   1. Every good company needs a logo. Your job is to create a logo using a Directive.
 
@@ -61,7 +61,7 @@
   5. Give your directive element a class and use position absolute and additional css to place the logo in the upper right corner and resize the image to make it look good. Write your css in the app.css file in the styles folder.
 
 
-## Section 2
+## Part 2
 
   1. Create a directive that shows an individual product. Move all the styling and data for a specific product into a directive. (The template already exists in `product-tmpl.html`).
 

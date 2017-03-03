@@ -35,7 +35,7 @@
 
   2. For the shop.html view you're going to need to make an api call to http://practiceapi.devmounta.in/products to get all the products. Use your shopService to make this request.
 
-  3. Ensure that the data that comes back from the request is saved in an array on $scope in your shopCtrl. You will be looping over this data and inputting it into your product directive.
+  3. Ensure that the data that comes back from the request is saved in an array on $scope in your shopCtrl.
 
   4. Now that we have our data, loop over you data in shop.html   There is some sample html in `product-tmpl.html` for what each product should look like.  
 

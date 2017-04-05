@@ -1,11 +1,35 @@
 <section class="lede section--padding-both">
     <div class="container">
         <p>Shop Page</p>
+
     </div>
 </section>
 <div class="product-grid__item   grid__item one-half large--one-third" >
 
     <!--Repeat over your data and display it below -->
 
-    
+<div ng-repeat='data in forHtml'>
+
+  <a class="product-grid__product" >
+      <img ng-src="{{data.image}}" class="product-grid__img"   sizes="(min-width: 960px) 33vw, (min-width: 769px) 50vw, 100vw" alt="">
+  </a>
+  <a class="product-grid__product">
+      show image
+  </a>
+
+  <!--Product Meta-->
+  <div class="product-grid__meta">
+      <!--Title click Should redirect to the product-details section. remember to pass along the product id so you can make an api call
+  to get the specific product details-->
+      <h3 ui-sref="product({id:data.id})" class="product-grid__name"><a><!--Title-->{{data.title}}</a></h3>
+
+      <!--Product Description-->
+      <h4 class="product-grid__sub"><!--Desc-->{{data.desc}}</h4>
+
+      <!--Product Price-->
+      <div class="product-grid__price"><!--Price-->{{data.price | currency}}</div>
+  </div>
+
+
+</div>
 </div>

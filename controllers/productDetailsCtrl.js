@@ -1,8 +1,5 @@
 angular.module('assessment').controller('productCtrl', function($scope, mainService, $stateParams){
 
-$scope.hi=$stateParams.id;
-
-
 $scope.productData=function(){
   mainService.forProducts().then(function(response){
     $scope.forProdHtml=response;

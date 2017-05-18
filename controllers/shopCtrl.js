@@ -1,4 +1,4 @@
-angular.module('assessment').controller('mainCtrl', function($scope,mainService){
+angular.module('assessment').controller('mainCtrl', function($scope, mainService, $stateParams){
 
   $scope.controlData=function(){
     mainService.servData().then(function(response){

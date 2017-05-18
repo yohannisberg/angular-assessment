@@ -16,9 +16,9 @@
                 <nav class="site-nav">
                     <ul class="primary-nav">
                         <!-- Navs go here -->
-                        <button ui-sref="home">Home</button>
-                        <button ui-sref="about">About</button>
-                        <button ui-sref="blog">Blog</button>
+                        <li ui-sref="home">Home</li>
+                        <li ui-sref="about">About</li>
+                        <li ui-sref="blog">Blog</li>
                     </ul>
                 </nav>
                 <button class="hamburger toggle-nav js-toggle-nav" ng-click="showNav" ui-sref="shop">
@@ -33,6 +33,8 @@
         <!--Views go here -->
 
         <ui-view></ui-view>
+
+        <product-direct></product-direct>
 
         </main>
         </div>
